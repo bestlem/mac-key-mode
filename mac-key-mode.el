@@ -111,7 +111,7 @@ when `mac-key-mode' is on.")
     (define-key map [(super p)] 'print-buffer)
     (define-key map [(super q)] 'save-buffers-kill-emacs)
     (define-key map [(super z)] 'undo)
-    (when (require 'redo nil t)
+    (when (require 'undo-tree nil t)
       ;; requires redo+
       (define-key map [(super shift z)] 'redo))
     (define-key map [(super x)] 'clipboard-kill-region)
